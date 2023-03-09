@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Estilos1.css">
+</head>
+<body>
+    
+    <table>
+        <thead>
+            <tr>
+                <th>Elemento</th>
+                <th>Descripcion</th>
+                <th>Uso</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>H1-H6</td>
+                <td>Los elementos HTML h1 a  h6 representan seis niveles de encabezados de sección.  h1 es el más alto
+                    nivel de sección y h6 es el más bajo.</td>
+                <td>
+                    <ul>
+                        <li>Los agentes de usuario pueden utilizar la información de encabezado para crear una tabla de contenido para un documento
+                            automática.</li>
+                        <li>No utilice elementos calefactores para cambiar el tamaño del texto. En su lugar, utilice la propiedad CSS font-size.</li>
+                        <li>No se salte los niveles de encabezado: comience siempre desde h1 , seguido de h2 y así sucesivamente.</li>
+                    </ul>
+
+                </td>
+            </tr>
+            
+            <tr>
+                <td>P</td>
+                <td>
+                    <p>El elemento HTML p representa un párrafo. Los párrafos generalmente se representan en medios visuales
+                        como bloques de texto separados de bloques adyacentes por líneas en blanco y / o sangría de primera línea, pero
+                        Los párrafos HTML pueden ser cualquier agrupación estructural de contenido relacionado, como imágenes o campos de formulario.</p>
+                    <p>Los párrafos son elementos de nivel de bloque y, en particular, se cerrarán automáticamente si otro nivel de bloque
+                        el elemento se analiza antes de la etiqueta de cierre /p. Consulte </p>
+                </td>
+                <td> </td>
+            </tr>
+
+
+
+
+            <tr>
+                <td>BR</td>
+                <td>El elemento HTML  br produce un salto de línea en el texto (retorno de carro). Es útil para escribir un poema o una dirección, donde la división de líneas es significativa.</td>
+                <td>No tiene</td>
+            </tr>
+
+
+
+
+
+            <tr>
+                <td>HR</td>
+                <td>El elemento HTML  hr representa una ruptura temática entre elementos de nivel de párrafo: por ejemplo, un cambio de escena en una historia o un cambio de tema dentro de una sección.</td>
+                <td>No tiene</td>
+            </tr>
+
+
+
+
+            <tr>
+                <td>WBR</td>
+                <td>El elemento HTML  wbr representa una oportunidad de salto de palabra, una posición dentro del texto donde el navegador puede opcionalmente romper una línea, aunque sus reglas de salto de línea no crearían un salto en esa ubicación.</td>
+                <td>No tiene</td>
+            </tr>
+
+
+
+
+            <tr>
+                <td>SUP</td>
+                <td>El elemento HTML  sup  especifica el texto en línea que se mostrará como superíndice solo por razones tipográficas. Los superíndices generalmente se representan con una línea base elevada utilizando texto más pequeño.</td>
+                <td>
+                    <p>El elemento  sup  solo debe usarse por razones tipográficas, es decir, para cambiar la posición del texto para cumplir con las convenciones o estándares tipográficos, en lugar de solo con fines de presentación o apariencia.</p>
+
+                    <p>Por ejemplo, para diseñar la marca denominativa de una empresa o producto que utiliza una línea de base elevada, se debe hacer usando CSS (lo más probable es que se alinee verticalmente) en lugar de sup. Esto se haría usando, por ejemplo, vertical-align: super o, para desplazar la línea base hacia arriba un 50%, vertical-align: 50%.</p>
+                    
+                    <p>Los casos de uso apropiados para sup incluyen (pero no se limitan necesariamente a):</p>
+                    
+                    <ul>
+                        <li>Mostrar exponentes, como "x 3 ."Puede valer la pena considerar el uso de MathML para estos, especialmente en casos más complejos . Vea los exponentes en los ejemplos a continuación.</li>
+                        <li>Visualización de letras superiores, que se utilizan en algunos idiomas al representar ciertas abreviaturas. Por ejemplo, en francés, la palabra "mademoiselle" se puede abreviar "M^lle"; este es un caso de uso aceptable. Consulte Letras Superiores para ver ejemplos.</li>
+                        <li>Representar números ordinales, como "4th" en lugar de "fourth"."Ver números ordinales para ejemplos.</li>
+                    </ul>
+                    
+                    
+                </td>
+            </tr>
+
+
+
+
+            <tr>
+                <td>SUB</td>
+                <td>El elemento HTML sub especifica texto en línea que debe mostrarse como subíndice solo por razones tipográficas. Los subíndices se representan normalmente con una línea de base reducida utilizando texto más pequeño.</td>
+                <td>
+                    <p>El elemento  sub debe usarse solo por razones tipográficas, es decir, para cambiar la posición del texto para cumplir con las convenciones o estándares tipográficos, en lugar de solo con fines de presentación o apariencia.</p>
+
+                    <p>Por ejemplo, usar  sub  para estilizar el nombre de una empresa que usa líneas de base alteradas en su marca denominativa no sería apropiado; en su lugar, se debe usar CSS. Por ejemplo, puede usar la propiedad vertical-align con una declaración como vertical-align: sub o, para controlar con mayor precisión el desplazamiento de la línea base, vertical-align: -25%.</p>
+                    
+                    <p>Los casos de uso apropiados para sub incluyen (pero no se limitan necesariamente a):</p>
+                    
+                    <ul>
+                        <li>Marcar números de notas al pie. Vea los números de las notas a pie de página para ver un ejemplo.</li>
+                        <li>Marcar el subíndice en números variables matemáticos (aunque también puede considerar usar una fórmula MathML para esto). Consulte Subíndices de variables.</li>
+                        <li>Denota el número de átomos de un elemento dado dentro de una fórmula química (como el mejor amigo de cada desarrollador, C8h10n4o2, también conocido como "cafeína"). Ver Fórmulas químicas.</li>
+                    </ul>
+                    
+                    
+                </td>
+            </tr>
+
+
+
+            <tr>
+                <td>STRONG</td>
+                <td>
+                    El elemento HTML  strong indica que su contenido tiene una gran importancia, seriedad o
+urgencia. Los navegadores suelen mostrar el contenido en negrita.
+                </td>
+                <td>
+                    <p>El elemento  strong  es para contenido que es de "gran importancia", incluidas cosas de gran importancia
+                        gravedad o urgencia (como advertencias). Esta podría ser una oración que es de gran importancia para
+                        toda la página, o simplemente podría tratar de señalar que algunas palabras son de mayor importancia
+                        en comparación con el contenido cercano.</p>
+                    <p>Normalmente, este elemento se representa de forma predeterminada con un peso de fuente en negrita. Sin embargo, no debe usarse
+                        para aplicar estilos en negrita, use la propiedad CSS font-weight para ese propósito. Utilice el elemento b  para
+                        llama la atención sobre cierto texto sin indicar un mayor nivel de importancia. Utilice el elemento  em 
+                        para marcar texto que tiene énfasis en el acento.</p>
+                    <p>Otro uso aceptado para  strong es denotar las etiquetas de los párrafos que representan notas o
+                        advertencias dentro del texto de una página.</p>
+                    
+
+
+                </td>
+            </tr>
+
+
+            <tr>
+                <td>EM</td>
+                <td>El elemento HTML  em marca el texto que tiene énfasis en el acento. El elemento  em 
+                     puede anidarse, indicando cada nivel de anidamiento un mayor grado de énfasis.</td>
+                <td>
+                    <p>El elemento  em  es para palabras que tienen un énfasis acentuado en comparación con el texto circundante
+                        que a menudo se limita a una palabra o palabras de una oración y afecta el significado de la oración en sí.</p>
+                    <p>Normalmente, este elemento se muestra en cursiva. Sin embargo, no debe usarse para aplicar estilos en cursiva; 
+                        use la propiedad CSS font-style para ese propósito. Utilice el elemento cite para marcar el título de una obra 
+                           (libro, obra de teatro, canción, etc.).). Utilice el elemento i para marcar texto que está en un tono o estado de
+                                ánimo alternativo, que cubre muchas situaciones comunes para cursiva, como nombres científicos o palabras en
+                                 otros idiomas. Utilice el elemento  strong para marcar el texto que tiene mayor importancia que el texto 
+                                 circundante.</p>
+                    
+                     
+                </td>
+            </tr>
+
+
+
+
+            <tr>
+                <td>MARK</td>
+                <td>El elemento HTML mark representa texto que está marcado o resaltado para fines de referencia o notación debido a la 
+                    relevancia del pasaje marcado en el contexto adjunto.
+                </td>
+                <td>
+                    <ul>
+                        <li> Cuando se usa en una cita q o en una cita en bloque blockquote, generalmente indica texto que es de especial interés 
+                            pero que no está marcado en el material fuente original, o material que necesita un escrutinio especial a pesar de que el autor
+                            original no pensó que era de particular importancia. Piense en esto como usar un rotulador resaltador en un libro para marcar
+                            pasajes que le resulten interesantes.</li>
+                        <li>De lo contrario, mark indica una parte del contenido del documento que probablemente sea relevante para la actividad actual del
+                            usuario. Esto podría usarse, por ejemplo, para indicar las palabras que coincidieron con una operación de búsqueda.</li>
+                        <li>No use mark para resaltar la sintaxis; en su lugar, use el elemento span con CSS apropiado aplicado.</li>
+                    </ul>
+                   
+                    
+                    
+                </td>
+            </tr>
+
+
+
+
+            <tr>
+                <td>Q</td>
+                <td>
+                    
+                    El elemento HTML q indica que el texto adjunto es una comilla corta en línea. 
+                    La mayoría de los navegadores modernos implementan esto rodeando el texto entre comillas.
+                    Este elemento está destinado a citas cortas que no requieren saltos de párrafo; para citas largas, use el elemento 
+                    blockquote.
+                </td>
+                <td></td>
+            </tr>
+
+
+
+
+            <tr>
+                <td>BLOCKQUOTE</td>
+                <td>El elemento HTML blockquote indica que el texto adjunto es una cita extendida. Por lo general, 
+                    esto se representa visualmente mediante sangría (consulte las notas para saber cómo cambiarlo). 
+                    Una URL para la fuente de la cita se puede dar usando el atributo cite, mientras que una representación de texto 
+                    de la fuente se puede dar usando el elemento cite.
+                </td>
+                <td>
+                    <p>Para cambiar la sangría aplicada al texto entrecomillado, utilice las propiedades CSS margin-left y / o margin-right, 
+                        o la propiedad margin shorthand.</p>
+                    <p>Para incluir comillas más cortas en línea en lugar de en un bloque separado, use el elemento q (Comillas).</p>
+                    
+                    
+                </td>
+            </tr>
+
+
+            <tr>
+                <td>CITE</td>
+                <td>El elemento HTML cite  se utiliza para marcar el título de una obra creativa citada. 
+                    La referencia puede estar en una forma abreviada de acuerdo con convenciones apropiadas para el contexto relacionadas con 
+                    los metadatos de citas.
+                </td>
+                <td>
+                    <p>En el contexto del elemento cite, un trabajo creativo que podría citarse podría ser, por ejemplo, uno de los siguientes: Libro,
+                        Un trabajo de investigación, Ensayo, Poema, Una partitura musical, Canto, Un guión de una obra de teatro o película, Cine, Un programa de televisión, Juego, Escultura, Pintura, Una producción teatral, Juego, Opera, Musical, Expositivo, Un informe de caso legal, Un programa de computadora, Website, Una página web, Una publicación de blog o un comentario, Una publicación o comentario en el foro, Tweet, Una publicación de Facebook, Una declaración escrita u oral</p>
+                    
+                    <p>Para incluir una referencia a la fuente del material citado que está contenido dentro de un elemento blockquote o q, use el atributo cite en el elemento.</p>
+                    <p>Normalmente, los navegadores diseñan el contenido de un elemento  cite en cursiva de forma predeterminada. Para evitar esto, aplique la propiedad CSS font-style al elemento  cite.</p>
+                    
+                    
+                </td>
+            </tr>
+
+
+            <tr>
+                <td>DFN</td>
+                <td>El elemento HTML dfn se utiliza para indicar el término que se define en el contexto de una frase u oración de definición. 
+                    El elemento p antepasado, el emparejamiento dt/dd, o el antepasado section más cercano del elemento dfn, 
+                    se considera la definición del término.</td>
+                <td>
+                    <p>Hay algunos aspectos no del todo obvios para usar el elemento dfn. Los examinamos aquí.</p>
+                    <h2>Especificar el término que se está definiendo</h2>
+                    <p>
+                        El término que se está definiendo se identifica siguiendo estas reglas:</p>
+                    
+                    <ol>
+                        <li>Si el elemento dfn tiene un atributo title, se considera que el valor del atributo title es el término que se está definiendo. El elemento aún debe tener texto dentro de él, pero ese texto puede ser una abreviatura (tal vez usando abbr) u otra forma del término.</li>
+                        <li> Si el  dfn  contiene un solo elemento secundario y no tiene ningún contenido de texto propio, y el elemento secundario es un elemento < abbr > con un atributo de título en sí mismo, entonces el valor exacto del título del elemento abbr  es el término que se está definiendo.</li>
+                        <li>De lo contrario, el contenido de texto del elemento dfn es el término que se está definiendo. Esto se muestra en el primer ejemplo a continuación.</li>
+                    </ol>
+                    
+                   
+                </td>
+            </tr>
+
+
+
+            <tr>
+                <td>ABBR</td>
+                <td>
+                    <p>El elemento HTML  abbr  representa una abreviatura o acrónimo.</p>
+                    <p>Al incluir una abreviatura o acrónimo, proporcione una expansión completa del término en texto sin formato en el primer uso, junto con el < abbr > para marcar la abreviatura. Esto informa al usuario lo que significa la abreviatura o acrónimo.</p>
+                    <p>El atributo de título opcional puede proporcionar una expansión para la abreviatura o acrónimo cuando no está presente una expansión completa. Esto proporciona una pista a los agentes de usuario sobre cómo anunciar / mostrar el contenido al tiempo que informa a todos los usuarios lo que significa la abreviatura. Si está presente, el título debe contener esta descripción completa y nada más.</p>
+                    
+
+                    
+                    
+                    
+                </td>
+                <td>
+                    <p>Ciertamente, no es necesario que todas las abreviaturas se marquen con  abbr. Sin embargo, hay algunos casos en los que es útil hacerlo:</p>
+                    <ul>
+                        <li>Cuando se usa una abreviatura y desea proporcionar una expansión o definición fuera del flujo del contenido del documento, use  abbr  con un título apropiado .</li>
+                        <li>Para definir una abreviatura que puede ser desconocida para el lector, presente el término usando abbr  y texto en línea que proporcione la definición. Incluya un atributo de título solo cuando la expansión o definición en línea no esté disponible.</li>
+                        <li>Cuando es necesario anotar semánticamente la presencia de una abreviatura en el texto, el elemento  abbr es útil. Esto se puede usar, a su vez, para fines de estilo o secuencias de comandos.</li>
+                        <li>Puede usar  abbr  junto con  dfn para establecer definiciones de términos que son abreviaturas o acrónimos. Vea el ejemplo que define una abreviatura a continuación.</li>
+                    </ul>
+                    
+                    
+                    
+                </td>
+            </tr>
+
+
+            <tr>
+                <td>SMALL</td>
+                <td>El elemento HTML  small representa comentarios laterales y letra pequeña, como derechos de autor y texto legal, 
+                    independientemente de su presentación con estilo. De forma predeterminada, muestra el texto dentro de él un tamaño de
+                     fuente más pequeño, como de pequeño a x-pequeño.
+                </td>
+                <td></td>
+            </tr>
+
+
+            <tr>
+                <td>INS</td>
+                <td>El elemento HTML  ins representa un rango de texto que se ha agregado a un documento. Puede usar el elemento 
+                    supr para representar de manera similar un rango de texto que se ha eliminado del documento.
+            
+                </td>
+                <td></td>
+            </tr>
+
+
+            <tr>
+                <td>DEL</td>
+                <td>El elemento HTML del representa un rango de texto que se ha eliminado de un documento. Esto se puede usar al representar 
+                    "cambios de pista" o información de diferencias de código fuente, por ejemplo. El elemento ins se puede usar para el 
+                    propósito opuesto: para indicar texto que se ha agregado al documento.
+                </td>
+                <td></td>
+            </tr>
+
+
+            <tr>
+                <td>S</td>
+                <td>El elemento HTML s representa el texto con un tachado o una línea a través de él. Use el elemento s para representar 
+                    cosas que ya no son relevantes o precisas. Sin embargo, s no es apropiado al indicar ediciones de documentos; 
+                    para eso, use los elementos del y ins, según corresponda.</td>
+                <td></td>
+            </tr>
+
+
+            <tr>
+                <td>CODE</td>
+                <td>El elemento HTML code muestra su contenido con un estilo destinado a indicar que el texto es un fragmento corto de 
+                    código de computadora. De forma predeterminada, el texto del contenido se muestra con la fuente monoespacio predeterminada 
+                    del agente de usuario.
+                </td>
+                <td></td>
+            </tr>
+
+
+            <tr>
+                <td>SAMP</td>
+                <td>
+                    El elemento HTML  samp  se usa para encerrar texto en línea que representa la salida de muestra (o entre comillas) 
+                    de un programa de computadora. Su contenido se representa normalmente utilizando la fuente monoespaciada predeterminada 
+                    del navegador(como Courier o Lucida Console).
+                </td>
+                <td>
+                    <p>Usar una regla CSS para anular la fuente predeterminada del navegador para el elemento samp; sin embargo, es posible que las preferencias del navegador tengan prioridad sobre cualquier CSS que especifique.</p>
+                    <pre>
+                        samp {
+                            font-family: "Courier";
+                          }
+                    </pre>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td>KBD</td>
+                <td>El elemento HTML  kbd representa un tramo de texto en línea que denota la entrada de texto del usuario desde un teclado, 
+                    entrada de voz o cualquier otro dispositivo de entrada de texto. Por convención, el agente de usuario procesa por defecto 
+                    el contenido de un elemento kbd  utilizando su fuente monoespacio predeterminada, aunque esto no es obligatorio por el 
+                    estándar HTML.
+                </td>
+                <td>
+                    <p>Se pueden usar otros elementos en conjunto con  kbd para representar escenarios más específicos:</p>
+                    <ul>
+                        <li>Anidar un elemento  kbd  dentro de otro elemento  kbd representa una clave real u otra unidad de entrada como una parte de una entrada más grande. Consulte Representación de pulsaciones de teclas dentro de una entrada a continuación.</li>
+                        <li>Anidar un elemento  kbd dentro de un elemento samp  representa la entrada que el sistema ha devuelto al usuario. Consulte la entrada con eco, a continuación, para ver un ejemplo.</li>
+                        <li>Anidar un elemento  samp  dentro de un elemento  kbd, por otro lado, representa la entrada que se basa en el texto presentado por el sistema, como los nombres de los menús y los elementos del menú, o los nombres de los botones que se muestran en la pantalla. Vea el ejemplo en Representación de opciones de entrada en pantalla a continuación.</li>
+                    </ul>
+                    
+                    
+                    
+                </td>
+            </tr>
+
+
+            <tr>
+                <td>PRE</td>
+                <td>El elemento HTML  pre representa texto preformateado que debe presentarse exactamente como está escrito en el archivo HTML.
+                     Por lo general, el texto se representa con una fuente no proporcional o monoespaciada. Los espacios en blanco dentro de este
+                      elemento se muestran como están escritos.</td>
+                <td></td>
+            </tr>
+
+
+            <tr>
+                <td>ADDRESS</td>
+                <td>El elemento HTML address indica que el HTML adjunto proporciona información de contacto para una persona o personas, o para una organización.</td>
+                <td>
+                    <ul>
+                        <li>El elemento address solo se puede usar para representar la información de contacto de su antecesor de elemento article o  body más cercano.</li>
+                        <li>Este elemento no debe contener más información que la información de contacto, como una fecha de publicación (que pertenece a un elemento  time).</li>
+                        <li>Normalmente, un elemento  address  se puede colocar dentro del elemento  footer  de la sección actual, si lo hay.</li>
+                    </ul>
+                    
+                    
+                    
+                </td>
+            </tr>
+
+
+
+        </tbody>
+        <tfoot>
+            
+            <tr>
+                <td colspan="3">
+                    MANUAL
+                </td>
+                
+            </tr>
+
+        </tfoot>
+    </table>
+    <a href="javascript:history.back()"> Volver Atrás</a>
+</body>
+</html>

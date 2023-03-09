@@ -54,17 +54,17 @@
                 <td>Header</td>
                 <td>
                     El elemento HTML  header representa contenido introductorio, normalmente un grupo de elementos introductorios o
-ayudas a la navegación. Puede contener algunos elementos de encabezado, pero también un logotipo, un formulario de búsqueda, un autor
-nombre, y otros elementos.
+                    ayudas a la navegación. Puede contener algunos elementos de encabezado, pero también un logotipo, un formulario de búsqueda, un autor
+                    nombre, y otros elementos.
                 </td>
                 <td>
-                    El elemento  header tiene un significado idéntico al rol de punto de referencia de banner en todo el sitio, a menos que esté anidado
-dentro del contenido de seccionamiento. Entonces, el elemento header  no es un punto de referencia.
-El elemento  header  puede definir un encabezado de sitio global, descrito como un banner en el árbol de accesibilidad.
-Por lo general, incluye un logotipo, el nombre de la empresa, la función de búsqueda y, posiblemente, la navegación global o un
-lema. Por lo general, se encuentra en la parte superior de la página.
-De lo contrario, es una sección en el árbol de accesibilidad y, por lo general, contiene las secciones circundantes
-encabezado (un elemento h1 - h6) y subtítulo opcional, pero no es obligatorio.
+                    <p>El elemento  header tiene un significado idéntico al rol de punto de referencia de banner en todo el sitio, a menos que esté anidado
+                        dentro del contenido de seccionamiento. Entonces, el elemento header  no es un punto de referencia.</p>
+                    <p>El elemento  header  puede definir un encabezado de sitio global, descrito como un banner en el árbol de accesibilidad.
+                        Por lo general, incluye un logotipo, el nombre de la empresa, la función de búsqueda y, posiblemente, la navegación global o un
+                        lema. Por lo general, se encuentra en la parte superior de la página.</p>
+                    <p>De lo contrario, es una sección en el árbol de accesibilidad y, por lo general, contiene las secciones circundantes
+                        encabezado (un elemento h1 - h6) y subtítulo opcional, pero no es obligatorio.</p>
                 </td>
             </tr>
 
@@ -72,21 +72,23 @@ encabezado (un elemento h1 - h6) y subtítulo opcional, pero no es obligatorio.
                 <td>Article</td>
                 <td>
                     El elemento HTML  article representa una composición autocontenida en un documento, página,
-aplicación, o sitio, que está destinado a ser distribuible o reutilizable de forma independiente (por ejemplo, en
-sindicación). Los ejemplos incluyen: una publicación en un foro, un artículo de una revista o periódico, o una entrada de blog, un
-tarjeta de producto, un comentario enviado por el usuario, un widget o gadget interactivo o cualquier otro
-elemento de contenido.
+                    aplicación, o sitio, que está destinado a ser distribuible o reutilizable de forma independiente (por ejemplo, en
+                    sindicación). Los ejemplos incluyen: una publicación en un foro, un artículo de una revista o periódico, o una entrada de blog, un
+                    tarjeta de producto, un comentario enviado por el usuario, un widget o gadget interactivo o cualquier otro
+                    elemento de contenido.
                 </td>
                 <td>
-                    Cada artículo debe identificarse, normalmente incluyendo un encabezado (elemento h1 - h6) como
-                        hijo del elemento  article.
-                        Cuando un elemento  article está anidado, el elemento interno representa un artículo relacionado con el
-                        elemento exterior. Por ejemplo, los comentarios de una publicación de blog pueden ser elementos  article anidados en
-                        el artículo  que representa la publicación del blog.
-                        La información del autor de un elemento article se puede proporcionar a través del elemento address, pero
-                        no se aplica a elementos article anidados.
-                        La fecha y hora de publicación de un elemento article se puede describir utilizando la fecha y hora
-                        atributo de un elemento time.
+                    <ul>
+                        <li>Cada artículo debe identificarse, normalmente incluyendo un encabezado (elemento h1 - h6) como
+                            hijo del elemento  article.</li>
+                        <li> Cuando un elemento  article está anidado, el elemento interno representa un artículo relacionado con el
+                            elemento exterior. Por ejemplo, los comentarios de una publicación de blog pueden ser elementos  article anidados en
+                            el artículo  que representa la publicación del blog.</li>
+                        <li>La información del autor de un elemento article se puede proporcionar a través del elemento address, pero
+                            no se aplica a elementos article anidados.</li>
+                        <li>La fecha y hora de publicación de un elemento article se puede describir utilizando la fecha y hora
+                            atributo de un elemento time.</li>
+                    </ul>
                 </td>
             </tr>
             
@@ -96,25 +98,33 @@ elemento de contenido.
                 <td>Section</td>
                 <td>
                     El elemento HTML  section representa una sección independiente genérica de un documento, que no
-tener un elemento semántico más específico para representarlo. Las secciones siempre deben tener un encabezado, con
-muy pocas excepciones.
+                    tener un elemento semántico más específico para representarlo. Las secciones siempre deben tener un encabezado, con
+                    muy pocas excepciones.
                 </td>
                 <td>
-                    Como se mencionó anteriormente, section  es un elemento de sección genérico, y solo debe usarse si no hay
+                    <p>Como se mencionó anteriormente, section  es un elemento de sección genérico, y solo debe usarse si no hay
                         un elemento más específico para representarlo. Como ejemplo, un menú de navegación debe estar envuelto en un
                         elemento  nav, pero una lista de resultados de búsqueda o una visualización de mapa y sus controles no tienen
-                        elementos, y podría colocarse dentro de una sección.
-                        Considere también estos casos:
-                        • Si el contenido del elemento representa una unidad atómica independiente de contenido que tiene sentido
-                        sindicado como una pieza independiente (por ejemplo, una publicación de blog o un comentario de blog, o un artículo de periódico), el
-                        artículo > elemento sería una mejor opción.
-                        • Si los contenidos representan información tangencial útil que funciona junto con el contenido principal,
-                        pero no es directamente parte de él (como enlaces relacionados o una biografía del autor), use un aside.
-                        • Si el contenido representa el área de contenido principal de un documento, utilice main .
-                        • Si solo utiliza el elemento como envoltorio de estilo, utilice un div en su lugar.
-                        Para reiterar, cada sección debe identificarse, generalmente incluyendo un encabezado (elemento h1 - h6)
+                        elementos, y podría colocarse dentro de una sección.</p>
+                        
+                    <p>Considere también estos casos:</p>
+
+                    <ul>
+                        <li>Si el contenido del elemento representa una unidad atómica independiente de contenido que tiene sentido
+                            sindicado como una pieza independiente (por ejemplo, una publicación de blog o un comentario de blog, o un artículo de periódico), el
+                            artículo  elemento sería una mejor opción.</li>
+                        <li>Si los contenidos representan información tangencial útil que funciona junto con el contenido principal,
+                            pero no es directamente parte de él (como enlaces relacionados o una biografía del autor), use un aside.</li>
+                        <li>Si el contenido representa el área de contenido principal de un documento, utilice main .</li>
+                        <li> Si solo utiliza el elemento como envoltorio de estilo, utilice un div en su lugar.</li>
+                    </ul>
+                        
+                        
+                        
+                    <p>Para reiterar, cada sección debe identificarse, generalmente incluyendo un encabezado (elemento h1 - h6)
                         como elemento secundario del elemento  section, siempre que sea posible. Vea a continuación ejemplos de dónde podría
-                        vea una sección  sin encabezado.
+                        vea una sección  sin encabezado.</p>
+                        
                 </td>
             </tr>
 
@@ -123,18 +133,23 @@ muy pocas excepciones.
                 <td>Nav</td>
                 <td>
                     El elemento HTML  nav representa una sección de una página cuyo propósito es proporcionar navegación
-enlaces, ya sea dentro del documento actual o a otros documentos. Ejemplos comunes de navegación
-las secciones son menús, tablas de contenido e índices.
+                    enlaces, ya sea dentro del documento actual o a otros documentos. Ejemplos comunes de navegación
+                    las secciones son menús, tablas de contenido e índices.
                 </td>
                 <td>
-                    • No es necesario que todos los enlaces estén contenidos en un elemento  nav.  nav  está destinado solo para un
-bloque principal de enlaces de navegación; por lo general, el elemento footer a menudo tiene una lista de enlaces que no
-debe estar en un elemento  nav.
-• Un documento puede tener varios elementos nav, por ejemplo, uno para la navegación del sitio y otro para
-navegación dentro de la página. aria-labelledby se puede utilizar en tal caso para promover la accesibilidad, consulte
-ejemplo.
-* Los agentes de usuario, como los lectores de pantalla dirigidos a usuarios discapacitados, pueden utilizar este elemento para determinar
-si se omite la representación inicial del contenido de solo navegación.
+                     
+                    <ul>
+                        <li>No es necesario que todos los enlaces estén contenidos en un elemento  nav.  nav  está destinado solo para un
+                            bloque principal de enlaces de navegación; por lo general, el elemento footer a menudo tiene una lista de enlaces que no
+                            debe estar en un elemento  nav.</li>
+                        <li>Un documento puede tener varios elementos nav, por ejemplo, uno para la navegación del sitio y otro para
+                            navegación dentro de la página. aria-labelledby se puede utilizar en tal caso para promover la accesibilidad, consulte
+                            ejemplo.</li>
+                        <li>Los agentes de usuario, como los lectores de pantalla dirigidos a usuarios discapacitados, pueden utilizar este elemento para determinar
+                            si se omite la representación inicial del contenido de solo navegación.</li>
+                    </ul>
+
+
                 </td>
             </tr>
 
@@ -143,12 +158,12 @@ si se omite la representación inicial del contenido de solo navegación.
                 <td>Aside</td>
                 <td>
                     El elemento HTML  aside representa una parte de un documento cuyo contenido es solo indirecto
-relacionado con el contenido principal del documento. Los asides se presentan con frecuencia como barras laterales o llamadas
-cuadro.
+                    relacionado con el contenido principal del documento. Los asides se presentan con frecuencia como barras laterales o llamadas
+                    cuadro.
                 </td>
                 <td>
                     No utilice el elemento  aside  para etiquetar texto entre paréntesis, ya que este tipo de texto se considera parte
-del flujo principal.
+                    del flujo principal.
                 </td>
             </tr>
 
@@ -157,15 +172,18 @@ del flujo principal.
                 <td>Footer</td>
                 <td>
                     El elemento HTML  footer representa un pie de página para el contenido de sección de su antecesor más cercano o
-seccionamiento del elemento raíz. Un footer  normalmente contiene información sobre el autor de la sección,
-datos de derechos de autor o enlaces a documentos relacionados.
+                    seccionamiento del elemento raíz. Un footer  normalmente contiene información sobre el autor de la sección,
+                    datos de derechos de autor o enlaces a documentos relacionados.
                 </td>
-                <td> Incluya información sobre el autor en un elemento  address  que se pueda incluir en el
-                    elemento  footer.
-                    • Cuando el contenido de seccionamiento del antepasado o el elemento raíz de seccionamiento más cercano es el elemento body
-                    el pie de página se aplica a toda la página.
-                    • El elemento  footer  no secciona el contenido y, por lo tanto, no introduce una nueva sección en
-                    contorno.
+                <td> 
+                    <ul>
+                        <li>Incluya información sobre el autor en un elemento  address  que se pueda incluir en el
+                            elemento  footer.</li>
+                        <li>Cuando el contenido de seccionamiento del antepasado o el elemento raíz de seccionamiento más cercano es el elemento body
+                            el pie de página se aplica a toda la página.</li>
+                        <li>El elemento  footer  no secciona el contenido y, por lo tanto, no introduce una nueva sección en
+                            contorno.</li>
+                    </ul>
                 </td>
             </tr>
 
@@ -180,13 +198,15 @@ datos de derechos de autor o enlaces a documentos relacionados.
                     documento, o la funcionalidad central de una aplicación.
                 </td>
                 <td>
-                    El contenido de un elemento main debe ser exclusivo del documento. Contenido que se repite en todas partes
+                    <p>El contenido de un elemento main debe ser exclusivo del documento. Contenido que se repite en todas partes
                         un conjunto de documentos o secciones de documentos, como barra lateral, enlaces de navegación, información de derechos de autor,
                         los logotipos del sitio y los formularios de búsqueda no deben incluirse a menos que el formulario de búsqueda sea la función principal del
-                        pagina.
-                          main no contribuye al esquema del documento; es decir, a diferencia de elementos como body  ,
+                        pagina.</p>
+                    <p>Main no contribuye al esquema del documento; es decir, a diferencia de elementos como body  ,
                         encabezados como h2, y tal, main  no afecta el concepto del DOM de la estructura del
-                        pagina. Es estrictamente informativo.
+                        pagina. Es estrictamente informativo.</p>
+                    
+                          
                 </td>
             </tr>
 
