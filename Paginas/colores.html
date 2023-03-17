@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colores</title>
+    <link rel="stylesheet" href="../Estilos/Estilos1.css">
+    
+</head>
+<body>
+    <center><img class="png" src="../Imagenes/cssLogo.png" alt="LogoCSS"></center>
+        <table>
+        <caption>Selectores</caption>
+        <thead>
+            <tr>
+                <th>Color</th>
+                <th>Descripcion</th>
+                <th>Ejemplo de uso</th>
+            </tr>
+        </thead>
+        <tbody>
+           
+
+
+            <tr>
+                <td>Usando los nombres de colores</td>
+                <td>
+                    <pre class="foo">
+                        Podemos especificar un color usando un nombre predefinido. Por ejemplo podemos especificar que el color del párrafo sea rojo 
+                        Nota:
+                        Una lista de los nombres de colores soportados por la mayoría de los navegadores populares  se encuentra en: CSS Color Module Level 3 (w3.org)
+                    </pre>  
+                </td>
+                <td>
+                    <pre class="foo">
+                        p{
+                            color: red;
+                        }
+                    </pre>
+                </td>
+                
+            </tr>
+
+
+            <tr>
+                <td>Usando el modelo RGB</td>
+                <td>
+                    <pre class="foo">
+                        Podemos  establecer el valor de  un color mezclando diferentes intensidades de los tres colores primarios. 
+                        Nota: No olvides que un color primario, es un color que no se puede obtener mediante la mezcla de ningún otro color.
+                        Para definir un color como la mezcla las intensidades de los colores primarios podemos usar la función:
+                        rgb(red, green, blue)
+                        Donde:
+                        El parámetro red
+                        Especifica la intensidad del  rojo presente en la mezcla
+                        Los valores posibles son: [0-255] o [0%-100%]
+                        El parámetro green
+                        Especifica la intensidad del  verde presente en la mezcla
+                        Los valores posibles son: [0-255] o [0%-100%]
+                        El parámetro blue
+                        Especifica la intensidad del  azul presente en la mezcla
+                        Los valores posibles son: [0-255] o [0%-100%]
+                        Nota:
+                        La cantidad de colores que se puede representar es : 256 x 256 x 256 = 16 777 216
+                        Escribir en google color picker 
+                        Podemos definir la transparencia de un color usando la función rgba, esta función es idéntica a la función rgb, pero con un parámetro adicional denominado opacidad,  para especificar la transparencia.
+                        rgba(r,g,b,a)
+                        Donde:
+                        El parámetro a
+                        Especifica la transparencia
+                        Los valores posibles son: [0-1]
+                        0,  significa completamente transparente se ve
+                        1,  significa completamente opaco (no transparente no se ve)
+
+                    </pre>
+                </td>
+                <td>
+                    <pre class="foo">
+                        Ejemplo sin opacidad
+                        div
+                        {
+                            color:rgb(255,0,0);
+                            background:rgb(255,255,0);
+                        }
+                        Las letras del contenedor div tendran un color rojo tambien puedo darle un valor de color al atributo background
+                        Ejemplo con opacidad
+                        div
+                        {
+                            color:rgb(255,0,0,0.5);
+                            background-color:rgb(255,255,0,0.5);
+                        }
+
+                    </pre>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td>Usando un valor hexadecimal</td>
+                <td>
+                    <pre class="foo">
+                        Podemos utilizar un número hexadecimal para definir un color. Es una alternativa a la función  rgb, es decir permite definir un color como la mezcla de intensidades de los colores primarios 
+                        #numero_hexadecimal 
+                        Donde: 
+                        El número hexadecimal
+                        Tiene 6 dígitos
+                        Los primeros dos dígitos indican el color rojo
+                        Los dos dígitos del medio indican el color verde
+                        Los dos últimos dígitos indican el color azul 
+                        Nota:
+                        La cantidad de colores que se puede representar es : 256 x 256 x 256 = 16 777 216
+                        https://g.co/kgs/sxEn2S herramienta que genera los colores en hexadecimales
+                    </pre> 
+                </td>
+                <td>
+                    <pre class="foo">
+                        div
+                        {
+                            background-color:#287b38;
+                        }
+                    </pre>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td>Usando el modelo HSL</td>
+                <td>
+                    <pre class="foo">
+                        Podemos definir el color usando la función 
+                        hsl(hue, saturation, lightness)
+                        Donde:
+                        El parámetro hue (tono)
+                        Es el color
+                        Los valores posibles son: [0-360]
+                        Podemos obtener los valores de la rueda de colores
+
+                        El parámetro saturation (saturación)
+                        Determina que tan fuerte o vivo es un color
+                        Los valores posibles son: [0%-100%]
+                        Donde 100% significa completamente saturado (color muy vivo)
+                        Donde 0% significa sin saturación alguna (color apagado)
+
+                        El parámetro ligthness (Luminosidad)
+                        Permite establecer la claridad u oscuridad de un color
+                        Los valores posibles son de: [0%-100%]
+                        Donde 100% significa completamente blanco (brillantez total)
+                        Donde 50% es normal
+                        Donde 0% es competamente negro (sin brillantez)
+                        
+                        Podemos definir la transparencia de un color usando la función hsla, esta función es idéntica a la función hsl, pero con un parámetro adicional denominado opacidad,  para especificar la transparencia.
+                        hsla(h,s,l,a)
+                        Donde:
+                        El parámetro a
+                        Especifica la transparencia
+                        Los valores posibles son: [0-1]
+                        0 significa completamente transparente
+                        1 significa completamente opaco (no transparente) 
+                        Herramienta->HSL Color Picker
+                    </pre>
+                </td>
+                <td>
+                    <pre class="foo">
+                        div
+                        {
+                            background-color:hsl(0,80%,45%);
+                            background-color:hsla(0,80%,45%,0.8s);
+                        }
+                    </pre>
+                </td>
+            </tr>
+
+
+            
+
+
+
+            
+           
+
+
+           
+
+
+        </tbody>
+        <tfoot>
+            
+            <tr>
+                <td colspan="3">
+                    MANUAL
+                </td>
+                
+            </tr>
+
+        </tfoot>
+    </table>
+    <a href="menuCSS.html"> Volver Atrás</a>
+</body>
+</html>

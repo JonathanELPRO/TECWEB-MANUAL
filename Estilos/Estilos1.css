@@ -16,3 +16,16 @@ th, td {
 th {
     background: #eee;
  }
+.jpg{
+    widht: 100px;
+    height: 100px;
+}
+.png{ /*con punto hago ref a clases */
+     widht: 100px;
+    height: 100px;
+}
+.foo
+{
+    font-size: 16px; 
+    font-family: 'Times New Roman', Times, serif; 
+}

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectores</title>
+    <link rel="stylesheet" href="../Estilos/Estilos1.css">
+    
+</head>
+<body>
+    <center><img class="png" src="../Imagenes/cssLogo.png" alt="LogoCSS"></center>
+        <table>
+        <caption>Selectores</caption>
+        <thead>
+            <tr>
+                <th>Selector</th>
+                <th>Descripcion</th>
+                <th>Ejemplo de uso</th>
+            </tr>
+        </thead>
+        <tbody>
+           
+
+
+            <tr>
+                <td>Universal</td>
+                <td>
+                    <pre class="foo">
+                        Selecciona todos los elementos. 
+                        Sintaxis 
+                        *{ declaraciones CSS }
+                    </pre>
+                    
+                </td>
+                <td>
+                    <pre class="foo">
+                        *{
+                            color: green;
+                        } 
+                        Seleccionamos todos los elementos del documento.
+                    </pre>
+                </td>
+                
+            </tr>
+
+
+            <tr>
+                <td>Tipo</td>
+                <td>
+                    <pre class="foo">
+                        Permite seleccionar elementos usando el nombre del elemento.
+                        Sintaxis
+                        nombre_elemento { declaraciones CSS }
+                    </pre>
+                </td>
+                <td>
+                    <pre class="foo">
+                        p{
+	                        color: red;
+                        } 
+                        Seleccionamos todos los elementos p del documento.
+                    </pre>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td>De clase</td>
+                <td>
+                    <pre class="foo">
+                        Permite seleccionar elementos en función de los valores del atributo class de los elementos.  
+                        Para que los elementos sean seleccionados, su atributo class debe incluir un valor  que coincida con el valor del selector. 
+                        Sintaxis 
+                        .valor_atributo { declaraciones CSS }
+
+                    </pre>
+                </td>
+                <td>
+                    <pre class="foo">
+                        &ltp class=”foo bar”&gt ¡HOLA MUNDO! &ltp/p&gt
+                        &ltp class=”foo baz”&gt ¡ADIÓS MUNDO! &ltp/p&gt
+
+                        .foo{
+                            color: blue;
+                        }
+                        Seleccionamos todos los elementos cuyo atributo class tenga como uno de sus valores la cadena foo.
+                    </pre>
+                </td>
+                
+            </tr>
+
+
+            <tr>
+                <td>De ID</td>
+                <td>
+                    <pre class="foo">
+                        Permite seleccionar un elemento en función del valor del atributo ID del elemento. Para que el elemento sea seleccionado, su atributo id debe coincidir exactamente con el valor dado en el selector.
+                        Sintaxis
+                        #valor_atributo { declaraciones CSS }
+                    </pre>
+                </td>
+                <td>
+                    <pre class="foo">
+                        &ltp id=”foo”&gt ¡HOLA MUNDO! &lt/p&gt
+
+                        #foo{
+                            color: blue;
+                        }
+
+                        Seleccionamos el elemento que tenga el atributo id con el valor foo.
+                    </pre>
+                </td>
+                
+            </tr>
+
+
+            
+
+
+
+            
+           
+
+
+           
+
+
+        </tbody>
+        <tfoot>
+            
+            <tr>
+                <td colspan="2">
+                    MANUAL
+                </td>
+                
+            </tr>
+
+        </tfoot>
+    </table>
+    <a href="menuCSS.html"> Volver Atrás</a>
+</body>
+</html>
