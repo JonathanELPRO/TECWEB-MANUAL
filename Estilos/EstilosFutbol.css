@@ -106,8 +106,9 @@
     /* padding-bottom:200px; */
     /* padding-left:200px;
     padding-right:200px;  */
-    width:59%;
+    width:50%;
     height: 30vh;
+    font-size: 15px;
 }
 
 .barcaDivCentral{
