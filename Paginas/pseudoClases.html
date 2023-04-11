@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectores</title>
+    <link rel="stylesheet" href="../Estilos/Estilos1.css">
+    
+</head>
+<body>
+    <center><img class="png" src="../Imagenes/cssLogo.png" alt="LogoCSS"></center>
+        <p>Permite seleccionar elementos en base a su estado (:disabled), posicion de los elementos en el documento(:first-child) e interacción del usuario(:hover) 
+            esta es la sintaxis :selector:pseudo-class { … }
+        </p>
+        <table>
+        <caption>Selectores</caption>
+        <thead>
+            <tr>
+                <th>Selector</th>
+                <th>Descripcion</th>
+                <th>Ejemplo de uso</th>
+            </tr>
+        </thead>
+        <tbody>
+           
+
+
+            <tr>
+                <td>button:hover {...}</td>
+                <td>
+                    <pre class="foo">
+                        La pseudo clase hover nos permite jugar con el estilo que tendra el elemento &ltbutton&gt cuando el usuario ponga el cursor sobre el.
+                    </pre>    
+                </td>
+                <td>
+                    <pre class="foo">
+                        button:hover {
+                            color: blue;
+                          }                          
+                    </pre>
+                </td>
+                
+            </tr>
+
+
+            <tr>
+                <td>input:disabled{...}</td>
+                <td>
+                    <pre class="foo">
+                        La pseudo clase disabled nos ayudar a manejar el estilo de aquellos elementos que hallan implementado su estado en disabled.
+                        Podemos tener muchos inputs pero la regla o estilo que se mostrara en el ejemplo solo afectara a aquellos que hallan puesto su estado en disabled.
+                    </pre>
+                    
+                </td>
+                <td>
+                    <pre class="foo">
+                        HTML
+                        &ltform&gt
+                            &ltlabel for="fecha">Fecha&lt/label&gt
+                            &ltinput name="fecha" type="date" disabled&gt
+                        &lt/form&gt
+                        CSS                    
+                        input:disabled{
+                            background-color: dimgrey;
+                            color: linen;
+                        }
+                    </pre>
+                </td>
+                
+            </tr>
+
+
+            <tr>
+                <td>p:first-child{...}</td>
+                <td>
+                    <pre class="foo">
+                        La pseudo clase first child hara que todo elemento &ltp&gt que son el primer hijo de algun otro elemento agarren estilo
+                    </pre>
+                    
+                </td>
+                <td>
+                    <pre class="foo">
+                        p:first-child{
+                            color
+                        }
+                    </pre>
+                </td>
+                
+            </tr>
+
+
+
+          
+
+            
+           
+
+
+           
+
+
+        </tbody>
+        <tfoot>
+            
+            <tr>
+                <td colspan="2">
+                    MANUAL
+                </td>
+                
+            </tr>
+
+        </tfoot>
+    </table>
+    <a href="menuCSS.html"> Volver Atrás</a>
+</body>
+</html>

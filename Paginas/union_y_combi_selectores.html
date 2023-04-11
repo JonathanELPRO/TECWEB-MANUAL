@@ -1,0 +1,133 @@
+/* p,div{
+    color:red;
+} */
+/* selecciona a dos elementos los agrupamos y les damos los mismos estilos se puede hacer lo mismo con clases */
+/* .uno,.dos{
+    color:red;
+} */
+/* .contenedor p{
+    background-color: orange;
+} */
+/* quiero seleccionar a todos los elementos p que son descendientes de un elemento dado por el selector ".contenedor"*/
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectores</title>
+    <link rel="stylesheet" href="../Estilos/Estilos1.css">
+    
+</head>
+<body>
+    <center><img class="png" src="../Imagenes/cssLogo.png" alt="LogoCSS"></center>
+        <p>Seleccionan parte de un elemento en lugar del elemento mismo. Los pseudo-elementos se añaden a los selectores y permiten añadir estilos a una parte concreta de los elementos seleccionados. Por ejemplo, el pseudo elemento ::first-line selecciona solo la primera línea del elemento especificado por el selector.\
+            Sintaxis: selector::pseudo-elemento { … }
+        </p>
+        <table>
+        <caption>Selectores</caption>
+        <thead>
+            <tr>
+                <th>Selector</th>
+                <th>Descripcion</th>
+                <th>Ejemplo de uso</th>
+            </tr>
+        </thead>
+        <tbody>
+           
+
+
+            <tr>
+                <td>LISTA DE SELECTORES</td>
+                <td>
+                    <pre class="foo">
+                        Selector-1, Selector-2, … {   }
+                        Selecciona la unión de los elementos seleccionados por cada selector de la lista
+                    </pre>    
+                </td>
+                <td>
+                    <pre class="foo">
+                        p,div{
+                            color:red;
+                        }   
+                        Para este ejemplo se usaron dos selectores los dos selectores de tipo la regla o estilo afectara a los los elementos que engloben dichos selectores
+                    </pre>
+                </td>
+                
+            </tr>
+
+
+            <tr>
+                <td>SELECCIONAR ELEMENTOS DESCENDIENTES (no necesariamente hijos hablamos de toda la descendencia)</td>
+                <td>
+                    <pre class="foo">
+                        Sintaxis 
+                        A B {}
+                        Donde A y B son selectores 
+                        Seleccionamos todos los elementos seleccionados por B que son descendientes de los elementos seleccionados por A
+                    </pre>    
+                </td>
+                <td>
+                    <pre class="foo">
+                        .contenedor p{
+                            background-color: orange;
+                        }
+                        Seleccionamos todos los elementos &ltp&gt que son descendientes de los elementos que selecciona .contenedor que puede ser solo uno.    
+                    </pre>
+                </td>
+                
+            </tr>
+
+
+            <tr>
+                <td>SELECCIONAR ELEMENTOS HIJOS</td>
+                <td>
+                    <pre class="foo">
+                        Sintaxis A>B{}
+                        Donde A y B son selectores 
+                        Seleccionamos todos los elementos seleccionados por B que son hijos de los elementos seleccionados por  A
+                    </pre>    
+                </td>
+                <td>
+                    <pre class="foo">
+                        .contenedor>p{
+                            background-color: orange;
+                        }
+                        Estamos seleccionando todos los elementos &ltp&gt que son solo hijos de los elementos que selecciona .contenedor
+                    </pre>
+                </td>
+                
+            </tr>
+
+
+            
+
+            
+
+
+
+          
+
+            
+           
+
+
+           
+
+
+        </tbody>
+        <tfoot>
+            
+            <tr>
+                <td colspan="2">
+                    MANUAL
+                </td>
+                
+            </tr>
+
+        </tfoot>
+    </table>
+    <a href="menuCSS.html"> Volver Atrás</a>
+</body>
+</html>

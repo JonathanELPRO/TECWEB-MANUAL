@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .palabraColorear
+        {
+            color:orange;
+        }
+    </style>
+</head>
+<body>
+    <h2><strong>ESPECIFICAD</strong></h2>
+    <p>Podemos usar diferentes combinaciones de selectores para seleccionar un mismo elemento.</p>
+    <code>
+        <pre>
+            [index.html]
+            &ltp class="saludo"&gt HOLA MUNDO&lt/p&gt
+            [estilos.css]
+            p{
+                color: blue;
+                background-color: yellow;
+            }
+
+            .saludo{
+                color: green;
+            }
+        </pre>  
+    </code>
+    <p>¿En qué color se muestra el texto?
+    </p>
+    <p>La especificidad es la manera mediante la cual los navegadores deciden el <strong>valor que será aplicado a una propiedad</strong> de un elemento.
+    </p>
+    <p><strong>Nota:</strong></p>
+    <p>No se sobrescribe toda la regla, solo las propiedades que aparecen en ambas reglas.
+    </p>
+    <p><strong>¿Cómo calculan los navegadores la especificidad?
+    </strong></p>
+    <ol>
+        <li>
+            <p>Sean las dos <strong>combinaciones de selectores</strong>, que seleccionan el mismo elemento <strong>p</strong>: 
+            </p>
+            <p>#id_1 .clase_1.clase_2 p{ color: green;}
+            </p>
+            <p>#id_1 .clase_1 p{color: red;}
+            </p>
+            <p>Para cada una de estas combinaciones el navegador calcula cual es más específica.
+            </p>
+        </li>
+        <li>
+            
+            <p>Para cada combinación de selectores que seleccionan un elemento en particular (en este caso el elemento <strong>p</strong>), construimos una estructura del tipo a - b - c, denominada <strong>especifidad</strong>, donde a,b y c son enteros.</p>
+            <ol>
+                <li>
+                    <p>El número <strong>a</strong> es la cantidad de veces que aparece un <strong>selector de id</strong>.
+                    </p>
+                </li>
+                <li>
+                    <p>El número <strong>b</strong> es la cantidad de  veces que aparece un <strong>selector de clase</strong>, más la cantidad de veces que aparece  un <strong>selector de atributo</strong>, más la cantidad de veces que aparece una <strong>pseudo-clase</strong>.
+                    </p>
+                </li>
+                <li>
+                    <p>El número <strong>c</strong> es la cantidad de veces que aparece un <strong>selector de tipo</strong>, más la cantidad  de veces que aparece un <strong>pseudo-elemento</strong>.
+                    </p>
+                    <p>
+                        #id_1 .clase_1.clase_2 p{ color: green;} _________________(1- 2 - 1)
+                    </p>
+                    <p>#id_1 .clase_1 p{color: red;}_____________________________(1 - 1 - 1)</p>
+                </li>
+            </ol>
+       
+        </li>
+        <li>
+            <p>
+                Determinamos qué combinación de selectores es más específica. Para esto comparamos la especificidad asociada a cada combinación de elementos: 
+            </p>
+            <ol>
+                <li>La combinación más específica será aquella cuyo valor de <strong>a</strong> es mayor.</li>
+                <li>En caso de que las combinaciones tengan el mismo valor <strong>a</strong>, la combinación más específica será aquella cuyo valor de <strong>b</strong> es mayor</li>
+                <li>En caso de que las combinaciones tengan el mismo valor <strong>b</strong>, la combinación más específica será aquella cuyo valor de <strong>c</strong> es mayor.</li>
+            </ol>
+        </li>
+        <li>
+            <p>La combinación de selectores que sea más específica es la que gana.
+            </p>
+            <p>
+                Nota: 
+            </p>
+            <p>El selector universal (*), los operadores de combinación (+, >, ~,  ' ' ) y el selector de ajuste de especificidad 	(:where()) no tienen efecto en el cálculo final. 
+            </p>
+            <p>Las pseudo clases :not() y  :is() no tienen efecto en la especificidad, pero sus parámetros sí.  La contribución que se toma en cuenta es la del parámetro (es decir selector) con mayor peso.
+            </p>
+        </li>
+    </ol>
+    <h2><strong>ESTILOS EN LINEA</strong></h2>
+    <p>Los estilos en línea, es decir, las declaraciones CSS especificadas usando el atributo <span class="palabraColorear">style</span>, tienen prioridad sobre todos las declaraciones normales, sin importar la especificidad. </p>
+    <h2><strong>!important</strong></h2>
+    <p>El uso de <strong>!important</strong> en una declaración CSS sobreescribe cualquier declaración, incluso las declaraciones CSS especificadas usando el atributo <span class="palabraColorear">style</span>. 
+    </p>
+    <p>Nota:
+    </p>
+    <p>Es útil saber que existe el indicador <strong>!important</strong> para que sepa qué es, cuando lo encuentre en el código de otras personas. Sin embargo, le recomendamos encarecidamente que nunca lo use a menos que sea absolutamente necesario. El indicador <strong>!important</strong> cambia la forma en que funciona una hoja de estilos, por lo que puede hacer que la depuración de problemas sea realmente difícil de resolver, especialmente en una hoja de estilo grande.
+    </p>
+    <h2><strong>ORDEN</strong></h2>
+    <p>Podemos tener una combinación de selectores que tengan la misma especificidad:
+    </p>
+    <p><strong>[index.html]
+    </strong> </p>
+    <code>&ltp&gtHOLA MUNDO&lt/p&gt
+    </code>
+    <p><strong>[estilos.css]
+    </strong> </p>
+    <code>
+        <pre>
+            p{
+                color: red;
+                background-color: yellow;	
+            }
+            p{
+                color: blue;
+            }            
+        </pre>
+    </code>
+
+
+    <p>¿En qué color se muestra el texto?
+        </p>
+    <p>Cuando se tiene la misma especificidad, el orden es importante. La declaración CSS que se define al ultimo, es la que se aplica</p>
+    <h2><strong>HERENCIA</strong></h2>
+    <P>Algunos valores de las propiedades CSS que se han establecido para los elementos padre los heredan los elementos hijo, pero otros no.
+    </P>
+    <code>
+        <pre>
+            &ltdiv&gt
+                UCB	
+                &ltp&gtHOLA MUNDO&lt/p&gt
+            &lt/div&gt
+            div{
+                color: red;
+            }            
+        </pre>
+    </code>
+    <p>Algunas propiedades no se heredan, por ejemplo la propiedad border.  Si los elementos hijos heredarán la propiedad border, cada elemento hijo tendría un borde, y este probablemente sea un efecto que no deseamos. 
+    </p>
+    <p>Nota:
+    </p>
+    <p>En las páginas de referencia de las propiedades CSS de MDN encontrarás un cuadro llamado <strong>DEFINICIÓN FORMAL</strong> con información técnica que enumera una serie de puntos sobre cada propiedad, incluyendo cuáles se heredan y cuáles no. Véase, por ejemplo, la definición formal de la propiedad color.
+    </p>
+    <p>https://developer.mozilla.org/en-US/docs/Web/CSS/color
+    </p>
+    <p>Ejemplo</p>
+    <code>
+        <pre>
+            &ltul class="main" &gt
+                &ltli&gtItem One&lt/li&gt
+                &ltli&gtItem Two
+                    &ltul&gt
+                        &ltli&gt2.1&lt/li&gt
+                        &ltli&gt2.2&lt/li&gt
+                    &lt/ul&gt
+                &lt/li&gt
+                &ltli&gtItem Three
+                    &ltul class="special">
+                        &ltli&gt3.1
+                            &ltul&gt
+                                &ltli&gt3.1.1&lt/li&gt
+                                &ltli&gt3.1.2&lt/li&gt
+                            &lt/ul&gt
+                            &lt/li&gt
+                        &ltli&gt3.2&lt/li&gt
+                    &lt/ul&gt
+                &lt/li&gt
+            &lt/ul&gt
+            
+            .main {
+                color: rebeccapurple;
+                border: 2px solid #ccc;
+                padding: 1em;
+            }
+            
+            .special {
+                color: black;
+                font-weight: bold;
+            }            
+        </pre>
+    </code>
+    <h2><strong>Controlar la herencia </strong></h2>
+    <p>Cada propiedad css acepta 2 valores para controlar la herencia
+    </p>
+    <p>inherit (Obligar a heredar)
+    </p>
+    <p>La propiedad tendrá el mismo valor que la propiedad correspondiente del padre.
+    </p>
+
+    <p>Ejemplo:</p>
+    <CODE>
+        <pre>
+            &ltdiv&gt
+                &ltp&gtHOLA MUNDO&lt/p&gt
+            &lt/div&gt
+            div{
+                padding: 8px;
+                color: red;
+                border: 2px solid green;
+            }
+
+            p{
+                border: inherit;
+            }            
+        </pre>
+    </CODE>
+
+    <p>initial  (romper la herencia)
+    </p>
+    <p>La propiedad tendrá el valor por defecto, es decir el valor establecido en la hoja de estilo por defecto del navegador.
+    </p>
+    <p>Ejemplo:</p>
+    <CODE>
+        <pre>
+            &ltdiv&gt
+                PRIMERA CADENA
+                &ltp&gtSEGUNDA CADENA&lt/p&gt
+            &lt/div&gt
+            div{
+                color: red;
+            }
+            p{
+                color: initial;
+            }
+        </pre>
+    </CODE>
+    <a href="menuCSS.html"> Volver Atrás</a>
+</body>
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectores</title>
+    <link rel="stylesheet" href="../Estilos/Estilos1.css">
+    
+</head>
+<body>
+    <center><img class="png" src="../Imagenes/cssLogo.png" alt="LogoCSS"></center>
+        <table>
+        <caption>Selectores</caption>
+        <thead>
+            <tr>
+                <th>Selector</th>
+                <th>Descripcion</th>
+                <th>Ejemplo de uso</th>
+            </tr>
+        </thead>
+        <tbody>
+           
+
+
+            <tr>
+                <td>selector[attr] { … }</td>
+                <td>
+                    <pre class="foo">
+                        Selecciona elementos que tengan un atributo con el nombre attr.
+                    </pre>
+                    
+                </td>
+                <td>
+                    <pre class="foo">
+                        p[title]
+                        {
+                            background-color: green;
+                        }
+                        Seleccionamos todos los elementos &ltp&gt que tienen un atributo con nombre title.
+                    </pre>
+                </td>
+                
+            </tr>
+
+
+            <tr>
+                <td>selector[attr=value] { … }</td>
+                <td>
+                    <pre class="foo">
+                        Selecciona elementos que tengan un atributo con el nombre attr. El único valor del atributo es exactamente value.
+                    </pre>
+                </td>
+                <td>
+                    <pre class="foo">
+                        p[title="parrafo2"]
+                        {
+                            background-color: yellow;
+                        }
+                        Lo que hace lo de arriba es a todos los elementos p con atributo de nombre title y valor igual a parrafo 2 les da estilo.
+                    </pre>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td>selector[attr~=value] { … }</td>
+                <td>
+                    <pre class="foo">
+                        Selecciona los elementos que tengan un atributo con el nombre attr. Uno de los valores del atributo es exactamente value. 
+                        Esto considerando que el valor de un atributo no necesariamente es unico pueden ser varios separados por espacios.
+                    </pre>
+                </td>
+                <td>
+                    <pre class="foo">
+                        div[class~=bar]
+                        {
+                            background-color: green;
+                        } 
+                        Selecciona los elementos que tengan un atributo con el nombre  class y al menos uno de los valores del atributo llamado class es bar .  
+                    </pre>
+                </td>
+                
+            </tr>
+
+
+            <tr>
+                <td>selector[attr ^= value] { … }</td>
+                <td>
+                    <pre class="foo">
+                        Selecciona los elementos que tengan un atributo con el nombre attr. El primero de los  valores del atributo empieza con value. 
+                    </pre>
+                </td>
+                <td>
+                    <pre class="foo">
+                        div[class^=ba]
+                        {
+                            background-color: red;
+                        }
+                        Selecciona los elementos que tengan un atributo con el nombre class y el primero de los  valores del atributo de nombre class es ba.
+                    </pre>
+                </td>
+                
+            </tr>
+
+
+            
+            <tr>
+                <td>selector[attr $= value] { … }</td>
+                <td>
+                    <pre class="foo">
+                        Selecciona los elementos que tengan un atributo con el nombre attr. El último de los  valores del atributo termina con value.
+                    </pre>
+                </td>
+                <td>
+                    <pre class="foo">
+                        div[class $= ar] {
+                            background-color: red;
+                        }
+                        Selecciona los elementos que tengan un atributo con el nombre class. El último de los  valores del atributo llamado class es ar.
+                    </pre>
+                </td>
+                
+            </tr>
+
+
+
+            <tr>
+                <td>selector[attr *= value] { … }</td>
+                <td>
+                    <pre class="foo">
+                        Selecciona los elementos que tengan un atributo con el nombre attr. Uno de los valores del atributo contiene al menos una ocurrencia de  value. 
+                    </pre>
+                </td>
+                <td>
+                    <pre class="foo">
+                        div[class *=bar ] {
+                            background-color: red;
+                        }
+                        Selecciona los elementos que tengan un atributo con el nombre class y al menos uno de los valores del atributo llamado class es bar.
+                    </pre>
+                </td>
+                
+            </tr>
+
+
+            
+           
+
+
+           
+
+
+        </tbody>
+        <tfoot>
+            
+            <tr>
+                <td colspan="2">
+                    MANUAL
+                </td>
+                
+            </tr>
+
+        </tfoot>
+    </table>
+    <a href="menuCSS.html"> Volver Atrás</a>
+</body>
+</html>

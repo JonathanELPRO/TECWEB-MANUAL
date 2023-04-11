@@ -1,0 +1,192 @@
+/* * {
+    box-sizing: content-box;
+
+  } */
+  body
+  {
+    background-color: white;
+    font-family: core_sans_regular, Arial, Helvetica, sans-serif;
+  }
+.encabezado
+{
+    /* height:15px;
+    width: 500px; */
+    /* si le pongo lo de arriba mi contenido que decia "hola" sobrepasaba esas dimensiones haciendo que 
+    el padding se re ajuste solito a la huevada, ten cuidado de que tu contenido no sobrepase las dimensiones que le pusiste al contenido del div,
+    otra onbservacion es que si vos defines un padding sin saber exactamente sus dimensiones
+    (usar vw o vh) y defines un height y width que sobrepasan el padding
+    dejamos de tener algo responsivo ya que las dimensiones del contenido sob fijas las definiste vos ya no van cambiando como con el padding y sus vh o vw*/
+    
+    text-align: center;
+    background-color: rgb(204, 30, 30);
+    color:white;
+    font-size:medium;
+    padding-top:5vh;
+    padding-bottom: 5vh;
+    padding-left: 40vw;
+    padding-right: 40vw;
+    border: 5px solid white; 
+    margin:0px;
+}  
+.equiposCentral
+{
+    text-align: center;
+    
+}
+.equipos
+{
+    display: inline-block;
+    width: 5vw;
+    height: 5vh;
+    padding-top:5vh;
+    padding-bottom: 5vh;
+    padding-left: 4vw;
+    padding-right: 4vw;
+    
+    /* margin:5px; */
+    
+    
+}
+.pngEquipos{
+    width: 5vw;
+    height: 5vh;
+}
+.ligaCentral
+{
+    text-align: center;
+    
+}
+.ligas
+{
+    display: inline-block;
+    width: 5vw;
+    height: 5vh;
+    padding-top:5vh;
+    padding-bottom: 5vh;
+    padding-left: 4vw;
+    padding-right: 4vw;
+    
+    
+   
+    
+}
+.pngLigas{
+    width: 5vw;
+    height: 5vh;
+}
+.mejorJugadorDivCentral
+{
+    background-color: black;
+    height: 60vh;
+    
+    padding-top:5vh;
+    padding-bottom: 5vh;
+    padding-left:8vw;
+    padding-right:8vw;
+}
+.mejorJugadorDivInterno
+{
+    display: inline-block;
+    width: 40%;
+    height: 100%;
+    
+}
+.imagenMejorJugador
+{
+    width: 100%;
+    height: 100%;
+}
+.infoMejorJugadorDivInterno
+{
+    display: inline-block;
+    vertical-align:top;
+    color:white;
+    /* display: inline-block; */
+    padding-top:15vh;
+    /* padding-bottom:200px; */
+    /* padding-left:200px;
+    padding-right:200px;  */
+    width:59%;
+    height: 30vh;
+}
+
+.barcaDivCentral{
+    display: flex;
+    flex-direction: row;
+    /* flex-direction: column; */
+    /* felex direction row es el valor por dfecto dira como se achican mis divs cuando haga algo responsivo
+    cuando el elemento sea mas pequeno que un determinado numero de pixeles cambiare de flex-direction: row; a flex-direction: column;  esto ultimo que mencione es con als condicionales*/
+    /* flex-wrap: wrap; 
+    align-items: center;
+    justify-content: space-between; */
+    /* flex-wrap: wrap; hace que cuando el contenido desborde a los elementos este se vaya apilando por debajo, align items haran que el contenido
+    de los contenedores internos se alinien, justify-content hara que el contenido se acomode dando espacios a los costados */
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    padding-top:5vh;
+    padding-bottom: 5vh;
+    padding-left:8vw;
+    padding-right:8vw;
+}
+
+
+.historiaBarcaDivInterno
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    flex-basis: 50%;
+    /* lo de arriba es el tamanio en relacion al padre */
+    /* flex-grow: 1; */
+
+    flex-shrink:2;
+    color: white;
+    margin: 30px;
+}
+
+.historiaBarcaDosDivInterno
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-basis: 50%;
+    /* lo de arriba es el tamanio en relacion al padre */
+    /* flex-grow: 1; */
+
+    flex-shrink:2;
+    color: white;
+    margin: 30px;
+}
+.cintaPNG
+{
+    width: 50%;
+    /* height: 49%; */
+    /* con el height: no se juega porque tanto cintaPNG como el parrafo estan dentro de historiaBarcaDivInterno
+    el cual tiene flex-direction: column osea que todo elemento se colocara en una columna y siempre con alturas simetricas para cada uno */
+}
+.barcelonaHistoriaUno
+{
+   text-align: center;
+    width: 100%;
+    /* height: 50%; */
+    /* con el height: no se juega porque tanto cintaPNG como el parrafo estan dentro de historiaBarcaDivInterno
+    el cual tiene flex-direction: column osea que todo elemento se colocara en una columna y siempre con alturas simetricas para cada uno */
+}
+.messiPNG
+{
+    width: 50%;
+    
+}
+.barcelonaHistoriaDos
+{
+   text-align: center;
+    width: 100%;
+    /* height: 50%; */
+    /* con el height: no se juega porque tanto cintaPNG como el parrafo estan dentro de historiaBarcaDivInterno
+    el cual tiene flex-direction: column osea que todo elemento se colocara en una columna y siempre con alturas simetricas para cada uno */
+}
+
+

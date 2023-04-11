@@ -1,0 +1,87 @@
+/* p,div{
+    color:red;
+} */
+/* selecciona a dos elementos los agrupamos y les damos los mismos estilos se puede hacer lo mismo con clases */
+/* .uno,.dos{
+    color:red;
+} */
+/* .contenedor p{
+    background-color: orange;
+} */
+/* quiero seleccionar a todos los elementos p que son descendientes de un elemento dado por el selector ".contenedor"*/
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectores</title>
+    <link rel="stylesheet" href="../Estilos/Estilos1.css">
+    
+</head>
+<body>
+    <center><img class="png" src="../Imagenes/cssLogo.png" alt="LogoCSS"></center>
+        <p>Seleccionan parte de un elemento en lugar del elemento mismo. Los pseudo-elementos se añaden a los selectores y permiten añadir estilos a una parte concreta de los elementos seleccionados. Por ejemplo, el pseudo elemento ::first-line selecciona solo la primera línea del elemento especificado por el selector.\
+            Sintaxis: selector::pseudo-elemento { … }
+        </p>
+        <table>
+        <caption>Selectores</caption>
+        <thead>
+            <tr>
+                <th>Selector</th>
+                <th>Descripcion</th>
+                <th>Ejemplo de uso</th>
+            </tr>
+        </thead>
+        <tbody>
+           
+
+
+            <tr>
+                <td>elemento::first-line{...}</td>
+                <td>
+                    <pre class="foo">
+                        Seleccionamos la primera línea de todos los elementos del tipo elemento
+                    </pre>    
+                </td>
+                <td>
+                    <pre class="foo">
+                        p::first-line{
+                            color: blue;
+                        }
+                        Seleccionamos la primera línea de todos los elementos &ltp&gt                 
+                    </pre>
+                </td>
+                
+            </tr>
+
+
+            
+
+
+
+          
+
+            
+           
+
+
+           
+
+
+        </tbody>
+        <tfoot>
+            
+            <tr>
+                <td colspan="2">
+                    MANUAL
+                </td>
+                
+            </tr>
+
+        </tfoot>
+    </table>
+    <a href="menuCSS.html"> Volver Atrás</a>
+</body>
+</html>
